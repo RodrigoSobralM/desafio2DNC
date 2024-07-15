@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="navContainer">
+      <nav id="navBar">
+        <h1>DncWeather</h1>
+        <div id="navList">
+          <ul>
+            <li>Endereços</li>
+            <li>Previsão do tempo</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="contentPage">
+      <div id="textInformationPage">
+        <h1>
+          Descubra Mais com Precisão: Previsões do Tempo e endereços em tempo
+          real.
+        </h1>
+        <img src="./assets/nuvens.svg" alt="icone de nuvens" />
+      </div>
+      <div id="cardForm">
+        <form action="" id="formulario">
+          <div class="formGroup">
+            <label for="">Primeiro Nome:</label>
+            <input type="text" placeholder="Insira seu primeiro nome:"/>
+          </div>
+          <div class="formGroup">
+            <label for="">E-mail:</label>
+            <input type="text" placeholder="Insira seu e-mail"/>
+          </div class="formGroup">
+          <div class="formGroup">
+            <label for="">Digite o CEP:</label>
+            <input type="text" placeholder="Insira o CEP"/>
+          </div>
+          <div class="formGroup">
+            <label for="">Digite a latitude e longitude para saber a previsão:</label>
+            <div id="containerFlexInput">
+                <input type="text" placeholder="Latitude"/>
+                <input type="text" placeholder="Longitude">
+            </div>
+          </div>
+          <button>Acessar</button>
+        </form>
+      </div>
+      <div id="tableLocation">
+        <div id="titleTable">
+            <h1>Resultado da busca por CEP:</h1>
+            <img src="./assets/location.svg" alt="icone de localicalização">
+        </div>
+        <table>
+            <tr id="titleCells">
+                <th>Logradouro/nome</th>
+                <th>Bairro/Distrito</th>
+                <th>Localidade/UF</th>
+            </tr>
+            <tr id="valueCells">
+                <td>exemplo</td>
+                <td>exemplo</td>
+                <td>exemplo</td>
+            </tr>
+        </table>
+      </div>
+      <div>
+        <div id="titleForecast">
+            <h1>Previsão do tempo na região:</h1>
+            <img src="./assets/forecast.svg" alt="icone de nuvens">
+        </div>
+        <div id="cardForecast">
+            <p>Previsão de tempo de acordo com a região: 24° C</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <p>Termos de Uso | Política de Privacidade</p>
+    </footer>
+  </body>
+</html>

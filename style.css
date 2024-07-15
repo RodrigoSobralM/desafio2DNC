@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  /* background-color: #F2F2F2; */
+  /* z-index: -1; */
+}
+body {
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+#contentPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navContainer {
+  background-color: #0c70f2;
+  height: 103px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#navBar {
+  color: white;
+  font-weight: 900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 69px 0 56px;
+  h1 {
+    font-size: 50px;
+  }
+}
+
+#navList {
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+
+    li {
+      font-size: 25px;
+    }
+  }
+}
+
+#textInformationPage {
+  display: flex;
+  justify-content: center;
+  h1 {
+    margin-top: 124px;
+    font-size: 50px;
+    width: 879px;
+  }
+  img {
+    margin-top: 75px;
+  }
+}
+
+#cardForm {
+  margin-top: 227px;
+  background-color: white;
+  height: 930px;
+  width: 859px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 39px;
+  margin-top: 144px;
+  button {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    margin-top: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0c70f2;
+    width: 630px;
+    height: 56px;
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0c60ce;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  label {
+    font-size: 25px;
+  }
+  input {
+    padding-left: 32px;
+    font-size: 20px;
+    color: #393939;
+    width: 630px;
+    height: 56px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+#containerFlexInput {
+  display: flex;
+  gap: 22px;
+  input {
+    width: 290px;
+  }
+}
+
+#tableLocation {
+  width: 1024px;
+}
+
+#titleTable {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  h1 {
+    font-size: 50px;
+    margin-top: 463px;
+    font-weight: 900;
+  }
+  img {
+    margin-top: 408px;
+  }
+}
+
+#titleCells {
+  height: 72px;
+  background-color: #0c70f2;
+  border-radius: 30px 30px 0 0;
+  th {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+
+#valueCells {
+  background-color: white;
+  height: 72px;
+  text-align: center;
+  td {
+    color: #1f1f1f;
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+
+table {
+  width: 1024px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th:first-child {
+  border-top-left-radius: 30px;
+}
+
+th:last-child {
+  border-top-right-radius: 30px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 30px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 30px;
+}
+
+#titleForecast {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 41px;
+  h1 {
+    font-size: 50px;
+    margin-top: 213px;
+    font-weight: 900;
+  }
+  img {
+    margin-top: 180px;
+  }
+}
+
+#cardForecast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+  height: 72px;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid #0c70f2;
+  margin-bottom: 216px;
+  p {
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+
+footer {
+  height: 94px;
+  background-color: #0c70f2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  p {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    padding-right: 15px;
+  }
+}
