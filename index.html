@@ -38,16 +38,16 @@
           </div class="formGroup">
           <div class="formGroup">
             <label for="">Digite o CEP:</label>
-            <input type="text" placeholder="Insira o CEP"/>
+            <input type="text" placeholder="Insira o CEP" id="cep"/>
           </div>
           <div class="formGroup">
             <label for="">Digite a latitude e longitude para saber a previsão:</label>
             <div id="containerFlexInput">
-                <input type="text" placeholder="Latitude"/>
-                <input type="text" placeholder="Longitude">
+                <input type="text" placeholder="Latitude" id="latitude"/>
+                <input type="text" placeholder="Longitude" id="longitude">
             </div>
           </div>
-          <button>Acessar</button>
+          <button id="buscar">Acessar</button>
         </form>
       </div>
       <div id="tableLocation">
@@ -62,9 +62,9 @@
                 <th>Localidade/UF</th>
             </tr>
             <tr id="valueCells">
-                <td>exemplo</td>
-                <td>exemplo</td>
-                <td>exemplo</td>
+                <td id="logradouro"></td>
+                <td id="bairro"></td>
+                <td id="uf"></td>
             </tr>
         </table>
       </div>
@@ -74,7 +74,7 @@
             <img src="./assets/forecast.svg" alt="icone de nuvens">
         </div>
         <div id="cardForecast">
-            <p>Previsão de tempo de acordo com a região: 24° C</p>
+            <p id="forecastLocation"></p>
         </div>
       </div>
     </section>
@@ -82,4 +82,5 @@
         <p>Termos de Uso | Política de Privacidade</p>
     </footer>
   </body>
+  <script src="consumptionAPI.js"></script>
 </html>
